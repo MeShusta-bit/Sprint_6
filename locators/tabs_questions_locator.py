@@ -26,3 +26,5 @@ class QaScooterQuestions:
         (By.XPATH, '//p[contains(text(), "Да, пока самокат не привезли")]'),
         (By.XPATH, '//p[contains(text(), "Да, обязательно")]')
     ]
+
+

@@ -29,6 +29,10 @@ class BasePage:
     def display_locator(self, locator):
         return WebDriverWait(self.driver, 10).until(expected_conditions.visibility_of_element_located(locator))
 
+    @allure.step('Ожидание текста локатора')
+    def text_answer(self,locator):
+        return self.display_locator(locator).text
+
 
     @allure.step('Ввести значение в поле')
     def enter_value(self,locator,data):
